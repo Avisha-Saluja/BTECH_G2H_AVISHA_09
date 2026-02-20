@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a,b,c;
+    float root1,root2;
+    printf("enter a");
+    scanf("%d",&a);
+    printf("enter b");
+    scanf("%d",&b);
+    printf("enter c");
+    scanf("%d",&c);
+    root1=(-b+sqrt(b*b-(4*a*c)))/2*a;
+    root2=(-b-sqrt(b*b-(4*a*c)))/2*a;
+    if(a=0)
+    printf("invalid quadratic equation");
+    else
+    printf("roots are \n");
+ printf("%f %f",root1,root2);
+}
