@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+ int sum=0;
+ int diff=0;
+ int product=0;
+ float divi=0;
+ char ch;
+ int n,m;
+ printf("enter character or operator\n");
+ printf("'+' for addition \n '-' for difference \n '*' for multiplication \n '/' for division \n");
+ scanf("%c",&ch);
+ printf("enter 1st number");
+ scanf("%d",&n);
+ printf("enter 2nd number");
+  scanf("%d",&m);
+ switch(ch)
+ {
+     case '+':
+     sum=m+n;
+     printf("sum is %d",sum);
+     break;
+     case '-':
+     diff=m-n;
+     printf("differnece is %d",diff);
+     break;
+     case '*':
+     product=m*n;
+     printf("product is %d",product);
+     break;
+     case '/':
+     divi=m/n;
+     printf("quotient is %d", divi);
+     break;
+     deafult:
+     printf ("invalid input");
+ }
+     
+ }
