@@ -1,0 +1,21 @@
+int main() {
+    int n,i;
+    printf("enter size of array\n");
+    scanf("%d",&n);
+    int a[n];
+    printf("enter array elements\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    int b[n];
+    for(i=0;i<n;i++)
+    {
+    b[i]=a[i];
+    }
+    printf("above array in copied in array b \n");
+    for(i=0;i<n;i++)
+    {
+        printf("%d \n",b[i]);
+    }
+}
