@@ -1,0 +1,38 @@
+
+#include <stdio.h>
+
+int main() {
+   int a,b,i,j;
+   int product=1;
+   printf("enter size of row and coloumn");
+   scanf("%d%d",&a,&b);
+   int ar[a][b];
+   int aar[a][b];
+   printf("enter elements");
+   for(i=0;i<a;i++)
+   {
+       for(j=0;j<b;j++)
+       {
+           scanf("%d",&ar[i][j]);
+       }
+   }
+   printf("enter elements");
+   for(i=0;i<a;i++)
+   {
+       for(j=0;j<b;j++)
+       {
+           scanf("%d",&aar[i][j]);
+       }
+   }
+   for(i=0;i<a;i++)
+   {
+       for(j=0;j<b;j++)
+       {
+          product=product*ar[i][j]*aar[i][j];
+       }
+   }
+   printf("sum is \n %d",product);
+   
+ return 0;
+ 
+}
