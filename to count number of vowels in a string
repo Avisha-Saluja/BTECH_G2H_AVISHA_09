@@ -1,0 +1,16 @@
+int main() {
+   char s[50];
+   int l;
+   int c=0,i;
+   printf("enter string\n");
+   gets(s);
+   l=strlen(s);
+   for(i=0;i<l;i++)
+   {
+       if (s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u')
+       {
+           c++;
+       }
+}
+printf("number of vowels in a a string is %d",c);
+}
